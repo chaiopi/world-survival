@@ -1,17 +1,57 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>萬界生存</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!-- ====================
+     萬界生存 V0.3
+     HTML 結構
+==================== -->
 
-<body>
+<div id="game">
+  <!-- ====================
+       UI 資源欄
+  ==================== -->
 
-<h1>萬界生存 V0.6</h1>
+  <div id="ui">
+    <div>
+      🪵 木材：
+      <span id="wood">0</span>
+    </div>
 
-<script src="game.js"></script>
+    <div>
+      🪨 石頭：
+      <span id="stone">0</span>
+    </div>
+  </div>
 
-</body>
-</html>
+  <!-- ====================
+       
+  ==================== -->
+
+  <div id="message"></div>
+  <!-- ====================
+       遊戲世界
+  ==================== -->
+
+  <div id="world">
+    <!-- 玩家 -->
+    <div id="player"></div>
+  </div>
+  <div id="inventory">
+    <h3>🎒 背包</h3>
+
+    <div class="resource-bar">
+      <div class="resource-slot">
+        🪵
+        <span id="bagWood">0</span>
+      </div>
+
+      <div class="resource-slot">
+        🪨
+        <span id="bagStone">0</span>
+      </div>
+    </div>
+
+    <button id="craftWorkbench" class="inventory-btn">🔨 工作台</button>
+
+    <button id="craftAxe" class="inventory-btn">🪓 木斧</button>
+
+    <button id="craftPickaxe" class="inventory-btn">⛏️ 木鎬</button>
+  </div>
+</div>
